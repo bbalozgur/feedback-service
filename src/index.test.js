@@ -1,5 +1,6 @@
 const request = require("supertest");
-const app = require('./app');
+const app = require('.');
+const { closeDbConnection } = require('./helpers/database/connectDatabase');
 
 describe('POST /v1/feedback Api testing', () => {
      it('should respond with a 200 status code', async () => {
