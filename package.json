@@ -3,10 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "babel src -s -D -d dist --presets es2015,stage-0",
-    "start": "node dist",
-    "prestart": "npm run -s build",
-    "dev": "nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
+    "start": "node src",
+    "dev": "nodemon",
     "test": "jest --verbose --coverage --forceExit --watchAll --maxWorkers=1"
   },
   "dependencies": {
