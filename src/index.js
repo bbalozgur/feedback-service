@@ -13,7 +13,6 @@ app.use(logger('dev'));
 app.use(express.json());
 
 app.get('/health', (_req, res) => res.json({ status: 'ok', time: new Date() }));
-app.get('/', (_req, res) => res.json({ message: 'hi' }));
 
 app.use('/v1', v1Routes);
 
